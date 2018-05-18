@@ -18,7 +18,7 @@ function encrypt(direction, rotation, message){
     var alphabet = ['A','B','C','D','E','F','G','H','I','J',
                     'K','L','M','N','O','P','Q','R','S','T','U',
                     'V','W','X','Y','Z'];
-    var i = 0,j = 0, index = 0, size = messageArray.length;
+    var i = 0,j = 0, index = 0, size = messageArray.length, dif = 0;
     
     //Iterando a mensagem
     for(i; i < size;i++){
@@ -30,6 +30,16 @@ function encrypt(direction, rotation, message){
 
                 if(alphabet[j] == messageArray[i]){
                     
+                    if(!direction){
+                        dif = j - rotation;
+                        index = dif - 25 < 0 ? 26 - Math.abs(dif) : dif;
+                    }else{
+                        dif = j + rotation;
+                        index = dif + 25 > 25 ? dif - 26 : dif;
+                    }
+
+                    cipheredMessage += alphabet[index];
+                    break;
                 }
             }
 
