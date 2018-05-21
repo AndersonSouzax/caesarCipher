@@ -10,7 +10,22 @@
 </head>
 <body>
     <h1>Enter With Your Message</h1>
-    <textarea name="" id="box" cols="30" rows="10"></textarea>
-    <button onclick=""></button>
+    <textarea name="" id="box" cols="80" rows="14"></textarea>
+
+    <button onclick="getInfoAndDec();">Encrypt</button>
+
+    <select name="select1" id="select-direction">
+        <option value="0">Esquerda</option>
+        <option value="1">Direita</option>
+    </select>
+    
+    <select name="select2" id="select-cripto">
+            <option value="0">Criptografar</option>
+            <option value="1">Descriptografar</option>
+    </select>
+    
+    <input type="number" name="input" id="rotation" min="3" max="25" value="3">
+
+    <h3 id="enc-box"></h3>
 </body>
 </html>
