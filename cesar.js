@@ -67,6 +67,5 @@ function getInfoAndDec(){
     var direction = document.getElementById('select-direction').selectedIndex;
     var cripto = document.getElementById('select-cripto').selectedIndex;
     var rotation = parseInt(document.getElementById('rotation').value);
-debugger;
     encrypt(direction,rotation,message,cripto);
 }

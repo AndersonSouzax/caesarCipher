@@ -7,6 +7,7 @@ textarea{
     color: white;
     background-color: black;
     resize: none;
+    box-shadow: 1px 1px 10px 1px #000;
 }
 
 body{
@@ -22,6 +23,23 @@ button{
     text-decoration: none;
     display: block;
     font-size: 16px;
-    /* margin: 4px 2px; */
     cursor: pointer;
+    display: inline;
+    margin-right: 50px;
+    box-shadow: 1px 1px 6px 1px #000;
+}
+
+select,input{
+    background-color: navy;
+    padding: 6px;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 1px 1px 6px 1px #000;
+    margin-right: 5px;
+}
+
+.control{
+    margin-top: 15px;
 }
